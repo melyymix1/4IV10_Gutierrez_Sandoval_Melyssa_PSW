@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+html, body{
+    background-color: rgb(89, 71, 209);
+}
+.main-container
+{
+    border: 4px solid rgb(212, 207, 169);
+    border-radius: 50px;
+    margin: 2rem;
+    padding: 1px;
+    background-color: rgb(161, 151, 171);
+}
+nav, section, footer, aside, article{
+    border: 2px solid #FFFF;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+article, aside{
+    width: 40%;
+    display: inline-flex;
+    height: 300px;
+    padding: 1rem;
+}
+nav, footer, section{
+    background-color: rgb(105, 154, 203);
+    
+}

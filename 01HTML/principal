@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Basica</title>
+    <link rel="stylesheet" href="./css/stylebasica.css">
+</head>
+<body>
+    <div class="main-container">
+    <header>
+        <h1>Nuestra Cabecera de una Pagina</h1>
+        <nav><h2>Aqui va un menu</h2></nav>
+    </header>
+    <section>
+        <h2>Este elemento nos sirve para poder crear seccciones internas dentro del cuerpo del HTML</h2>
+    
+        <article>
+            <h2>Esta es una seccion para crear contenido independiente a columnas</h2>
+        </article>
+            <aside><h2>Esta etiqueta nos sirve para crear 
+                una seccion de publicidad o anuncios en una barra lateral 
+                izquierda o derecha</h2>
+        </aside>
+  
+    </section>
+    <a href="../index.html">Regresar a la pagina principal</a>
+    <footer><h1>Estas son las patitas, aqui va principalmente
+        la informacion de contacto, redes sociales, Aviso de Privacidad, entre otros del sitio
+        principal</h1>
+    </footer>
+    </div>
+</body>
+</html>
