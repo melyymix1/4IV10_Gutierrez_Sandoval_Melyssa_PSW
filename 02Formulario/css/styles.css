@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: o;
+}
+
+body{
+background-image: url(../imagenes/fondo.jpg);
+color: rgb(200, 207, 169);
+display: flex;
+align-items: center;
+flex_direction: column;
+align_content: center;
+}
+
+.userlogin
+{
+ background-color: rgb(89, 71, 209);
+height: 400px;
+width: 400px;
+border-radius: 15px solid rgb(161, 151, 171);
+}
+
+.title{
+text-align: center;
+font-family: 'Roboto';
+text-transform: uppercase;
+font-size: 15px;
+padding-top: 10px;
+color: black;
+}
