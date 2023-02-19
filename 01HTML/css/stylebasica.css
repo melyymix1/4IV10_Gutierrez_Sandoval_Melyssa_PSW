@@ -28,6 +28,5 @@ article, aside{
     padding: 1rem;
 }
 nav, footer, section{
-    background-color: rgb(105, 154, 203);
-    
+    background-color: rgb(105, 154, 203);  
 }
