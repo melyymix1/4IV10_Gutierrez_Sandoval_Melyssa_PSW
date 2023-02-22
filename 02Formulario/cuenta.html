@@ -8,6 +8,45 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    ola
+    <div CLASS="contenedor">
+        <div class="content-formulario">
+            <form name="formulario" method="get"  action="" onsubmit="return validar(this)">
+                <div class = "title2">
+                    <h1>Bienvenido Nuevo Usuario de Adios a la Vida</h1>
+                </div>
+               <div class="nombre">
+               <h3>Nombre: </h3> 
+               <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="paterno">
+               <h3>Apellido Paterno: </h3>
+               <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="materno">
+               <h3>Apellido Materno: </h3> 
+               <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="correo">
+                <h3>E-mail: </h3> 
+                <input type="email" name="correo" id="correo">
+             </div>
+               <div class = "password">
+                <h3>Ingresa la Contraseña:</h3>
+                <input type="password" name = "pass" id = "password" 
+                class = "input_pass">
+            </div>
+            <div class="confirmar"><h3>Confirmar Contraseña:</h3>
+                <input type="password" name = "pass2" id = "password2" 
+                class = "input_pass"></div>
+            <div class="buttons2">
+               <input type="submit" name="enviar" value="Confirmar Cuenta">
+            </div>
+            
+            </form>
+            <hr>
+            <div class="regreso">
+            <a href="./formulario.html">Regresar</a></div>
+        </div>
+    </div>
 </body>
 </html>
