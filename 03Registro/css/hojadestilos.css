@@ -1,10 +1,10 @@
 *{
     padding: 0;
     margin: 0;
-    color: black;
+    color: #ffff;
 }
 header{
-    background-color: #421a7d;
+    background-color: #AD8E70;
     width: 100%; 
     height: 48px;}
 header nav ul li
@@ -19,10 +19,10 @@ header nav ul li a
     display: inline-block; 
     color: #000000;
 }
-header nav ul li a:hover{background-color:#4E31AA; color: rgb(255, 255, 255);}
+header nav ul li a:hover{background-color:#E8D5C4;  color: rgb(131, 65, 65);}
 table,td {
 	border: 2px solid black;
-    background-color: #FF6E31;
+    background-color: #e1a66b;
     margin: auto;
 }
 h1, h2,p{
@@ -43,14 +43,16 @@ h1, h2,p{
     background-color: rgb(232, 230, 239);
     margin-top: 4px;
     margin-bottom: 6px;
+    color: #000000;
   }
   .buttons input{
     border-radius: 7px;
     margin: auto;
     margin-bottom: 4px;
+    text-decoration-color: #000000;
     text-align: center;
     cursor: pointer;
-    background-color: #FCFFE7;
+    background-color: #000000;
     border-color: rgb(56, 55, 53);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
@@ -60,7 +62,7 @@ h1, h2,p{
     margin-bottom: 0px;
 }
 body{
-    background-color:#3795BD;
+    background-image: url("../imagenes/fondo2.jpg");
 }
 hr{
     margin-top: 5px;
@@ -69,7 +71,7 @@ hr{
     margin-left: 150px;
     margin-right: 5px;
     padding-left: 5px;
-    border: 2px solid #000000;
+    border: 2px solid #ffffff;
     border-radius: 200px /8px;
     height: 0px;
     text-align: center;
