@@ -5,53 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="stylesheet" href="./css/hojadestilos.css">
     <script src="./js/validacion.js"></script>
 </head>
 <body>
-    <p>Había una vez un patito que decia miau miau,
-        y este patito quería aprender a utilizar diferentes tipos de formularios.
+    <div class="header">
+        <header>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Index</a></li>
+              <li><a href="../Curriculum/curriculum.html">Acerca de Mí</a></li>
+            </ul>
+          </nav>
+        </header></div>
+    <center><h1>Tipos de Formularios</h1></center>
+    <hr><br>
+    <div class="table">
+        <table width="70%">
+        <tr>
+            <td colspan="2"> <p align="center">Había una vez un patito que decia miau miau,
+                y este patito quería aprender a utilizar diferentes tipos de formularios.
+                <br>
+                Existen dos metodos principales para la obtención de los datos dentro
+                de un formulario web, para lo cual aquí lo explicaremos:
+            </p></td>
+          </tr>
+          <tr>
+            <td><center><h2>GET<h2></center>Este método es el estandar como salida del navegador
+                mediante el cual se resuelve una petición por parte del cliente, así mismo en 
+                la salida estandar (url), se puede visualizar los datos enviados mediante el formulario.</td>
+            <td><center><h2>POST<h2></center> Este método es el más utilizado para el envio de información desde un 
+                formulario atendiendo una petición por parte del cliente, actuando para poder agregar o 
+                insertar nuevos datos a una BD, asi mismo a diferencia del metodo get, este utiliza
+                "un tipo de seguridad", mediante el cual la información no es visible por medio de la 
+                salida estandar del navegador.</td>
+          </tr>
+        </table>
         <br>
-        Existen dos metodos principales para la obtencion de los datos dentros
-        de un formulario web, para lo cual aquí lo explicaremos:
-    </p>
-    <br><h1>GET:</h1> Este metodo es el estandar como salida del navegador
-    mediante el cual se resuelve una peticion por parte del cliente, asi mismo en 
-    la salida estandar (url), se puede visualizar los datos enviados mediante el formulario.
-<br> <h1>POST:</h1> Este metodo es el mas utilizado para el envio de información desde un 
-formulario atendiendo una petición por parte del cliente, actuando para poder agregar o 
-insertar nuevos datos a una BD, asi mismo a diferencia del metodo get, este utiliza
-"un tipo de seguridad", mediante el cual la información no es visible por medio de la 
-salida estandar del navegador.
-<br>
+        <center><h1>Ejemplo</h1></center>
+        <hr>
+</div><br>
 <div CLASS="container">
     <div class="content-formulario">
         <form name="formulario" method="get"  action="" onsubmit="return validar(this)">
            <br>
+           <h2>Registro</h2>
+           <div class="inputs">
            <label>Nombre: </label> 
            <br>
-           <input type="text" name="nombre" id="nombre">
+           <input type="text" name="nombre" id="nombre" required>
            <br>
            <label>Edad: </label> 
            <br>
-           <input type="number" name="edad" id="edad" min="01" max="99">
+           <input type="number" name="edad" id="edad" min="01" max="99" required>
            <br>
            <label>Fecha de Nacimiento: </label> 
            <br>
-           <input type="date" name="fecha" id="miento" min="1923-01-01" max="2023-02-23" required pattern="\d{4}-\d{2}-\d{2}" onkeydown="return false" >
+           <input type="date" name="fecha" id="miento" min="1923-01-01" max="2023-02-25" required pattern="\d{4}-\d{2}-\d{2}" onkeydown="return false">
            <br>
            <label>E-mail: </label> 
            <br>
-           <input type="email" name="correo" id="correo">
+           <input type="email" name="correo" id="correo" required>
            <br>
-           <input type="submit" name="enviar" value="Enviar Datos del Registro">
+           <label>Celular: </label>
            <br>
-           <input type="reset" name="borrar" value="Borrar Datos">
+           <input type="tel" id="tel" name="tel"></div>
+           <div class="buttons">
+           <input type="submit" name="enviar" id=prueba2 value="Enviar Datos del Registro">
+           <br>
+           <input type="reset" name="borrar" value="Borrar Datos"></div>
            <br>
         </form>
-    </div>
-    <div class="Tarea">
-        Quiero que se valide el campo de fecha para que no existan años superiores al actual
-        asi como tampoco años con el 31 de febrero
     </div>
 </div>
 </body>

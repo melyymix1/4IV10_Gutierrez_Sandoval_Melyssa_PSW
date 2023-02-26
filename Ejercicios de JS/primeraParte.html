@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas Secuenciales</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <div class="header">
+        <header>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Volver</a></li>
+              <li><a href="./primeraParte.html">Problemas Secuenciales</a></li>
+              <li><a href="#">Problemas Selectivos Compuestos</a></li>
+            </ul>
+          </nav>
+        </header></div>
+    <div class="container">
+        <div class="p1">
+        <form method="get" name="formulario" action="">
+            <h2>Problema 1:</h2>
+            <label>¿Desea invertir su capital? En el banco "Panquesito" puedes invertir a razón 8.2% mensual cubriendo un máximo de 36 meses.</label>
+            <br><div class="table-container">
+            <table id="table" class="tablai">
+                <tr>
+                    <td align="right">Introduce la cantidad que desea invertir: </td>
+                    <td><input type="text" id="cantidad" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="invertir" onclick="return interes()" value="Calcular Interes"></td>
+                </tr>
+                <tr>
+                    <td>Su sueldo total con el interés del 8.2% mensual es de:</td>
+                    <td>
+                        <input type="text" name="sueldoi" id="cantidadi" readonly="readonly" class="input_text">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Su sueldo total máximo  36 meses es de:</td>
+                    <td>
+                        <input type="text" name="sueldot" id="cantidadt" readonly="readonly" class="input_text">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="borr" value="Borrar Datos" onclick="return borrar()"></td>
+
+                </tr>
+               
+            </table></div>
+        </form>
+        <script src="./js/validar.js"></script>
+    </div>
+    <hr>
+    <div class="p2">
+        <form method="get" name="formulario2" action="">
+        <h2>Problema 2:</h2>
+        <label>Un vendendor recibe un sueldo base + un 35% extra de comisión, el vendedor desea saber cuanto dinero
+            obtendrá por concepto de comisiones por las 5 ventas que realiza durante mes, así mismo se le hace un descuento de 12% por concepto
+            de impuesto, desplegar el total que recibirá en el mes tomando en cuenta su sueldo base, comisiones e impuestos. 
+        </label>
+        <br>
+        <div class="table-container2">
+            <table id="table2" class="tablaa">
+                <tr>
+                    <td align="right">Teclea el sueldo base: </td>
+                    <td><input type="text" id="cantidadp2" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                <tr>
+                    <td align="right">Primer venta:</td>
+                    <td>
+                        <input type="text" name="ventas" id="venta1" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                    <tr>
+                    <td align="right">Segunda venta:</td>
+                    <td>
+                        <input type="text" name="ventass" id="venta2" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Tercer venta:</td>
+                    <td>
+                        <input type="text" name="ventasss" id="venta3" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Cuarta venta:</td>
+                    <td>
+                        <input type="text" name="ventassss" id="venta4" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Quinta venta:</td>
+                    <td>
+                        <input type="text" name="ventasssss" id="venta5" onkeypress="return validarn(event)">
+                    </td>
+                        
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="ingresar" onclick="return interes2()" value="Enviar datos">
+                <input type="button" name="borr" value="Borrar Datos" onclick="return borrar2()"></td>
+
+                </tr><tr><Td></Td><td></td><td>
+                <td>El total tomando en cuenta:
+                    <ul>
+                    <li>Sueldo. </li>
+                    <li>35% de comisión por cada una de las ventas. </li>
+                    <li>Descuento de 12% por concepto de inpuestos. </li>
+                </ul>
+                </td>
+                <td>
+                    <input type="text" name="sueldot" id="cantidadt2" readonly="readonly" class="input_text">
+                </td></tr>
+                
+            </table>
+        </div>
+    </form>
+    </div>
+    <hr>
+    <div class="p3">
+        <form method="get" name="formulario3" action="">
+        <h2>Problema 3:</h2>
+        <label>Se solicita un sistema para una tienda para el cual deben ingressr:
+            Nombre
+            Marca
+            Tipo
+            Precio 
+            Del producto
+            Si el producto es papa recibe un 2% de descuento, si es un pastelito 10% de descuento
+         y si es un lacteo recibe un 7.5% de descuento en la compra, desplegar el total a pagar</label>
+         <div class="table-container">
+            <table id="table3" class="tabla33">
+                <tr>
+                    <td align="right">Nombre del Producto: </td>
+                    <td><input type="text" id="Nproduct" onkeypress="return validarL(event)"></td>
+                </tr>
+                <tr>
+                    <td align="right">Marca:</td>
+                    <td>
+                        <input type="text" name="MARCA" id="Mproduct" onkeypress="return validarL(event)" class="input_text">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Tipo:</td>
+                    <td>
+                        <input type="text" name="Tipo" id="Tproduct" onkeypress="return validarL(event)" class="input_text">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right">Precio: </td>
+                    <td><input type="text" id="Precioss" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="Buscar" onclick="return validarp3()" value="Buscar Datos">
+                <input type="button" name="borrar" value="Borrar Datos" onclick="return borrar3()"></td>
+                </tr>
+                <tr>
+                    <td align="right">Total: </td>
+                    <td><input type="text" id="total" readonly=""></td>
+                </tr>
+               
+            </table></div>
+        </form>
+    </div>
+    <hr>
+    <div class="p4">
+        <h2>Problema 4:</h2>
+        <label>Un alumno desea saber cual será su calificación final en la materia de Algoritmos
+            Dicha calificación se compone:
+            55% del promedio de sus tres calificaciones parciales.
+            30% de la calificación del examen final.
+            15% de la calificación de un trabajo final.
+        </label>
+    </div>
+    <hr>
+    <div class="p5">
+        <h2>Problema 5:</h2>
+        <label>Un maestro desea saber el porcentaje de hombres y mujeres en un grupo, dicho 
+            grupo sola puede tener elementos de hombres y mujeres con un porcentaje, a partir de ahí obtener el 100%.
+        </label>
+    </div>
+    <hr>
+    <div class="p6">
+        <h2>Problema 6:</h2>
+        <label>Realizar un algoritmo que calcule la edad de una persona
+        </label>
+    </div>
+</div>
+</body>
+</html>

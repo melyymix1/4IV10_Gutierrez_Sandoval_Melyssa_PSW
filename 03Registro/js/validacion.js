@@ -87,4 +87,66 @@ function validar(formulario){
         formulario.edad.focus();
         return false;
     }
+
+
+//Validar fecha en el caso de que jimmy quierea trollear
+    var fecha = new Date(formulario.fecha.value);
+    var hoy = new Date();
+    var mes = fecha.getMonth()+1;
+    var dia = fecha.getDate();
+
+    if(fecha > hoy){
+        alert("Fecha inválida");
+        formulario.fecha.focus();
+        return false;
+    }
+
+    if((dia<1) || (dia>31)){
+        alert("Favor de ingresar un día válido, no exiten meses con 0 o 32 días...")
+        formulario.fecha.focus();
+        return false;
+    }
+
+    if((mes == 2) && (dia > 29)){
+        alert("Febrero solo cuenta con 28 días (29 días si es bisiseto), checa que la fecha este bien")
+        formulario.fecha.focus();
+        return false;
+    }
+    if((mes == 4) && (dia > 30)){
+        alert("Abril solo cuenta con 30 días")
+        formulario.fecha.focus();
+        return false;
+    }
+    if((mes == 6) && (dia > 30)){
+        alert("Junio solo cuenta con 30 días")
+        formulario.fecha.focus();
+        return false;
+    }
+    if((mes == 9) && (dia > 30)){
+        alert("Septiembre solo cuenta con 30 días")
+        formulario.fecha.focus();
+        return false;
+    }
+    if((mes == 11) && (dia > 30)){
+        alert("Noviembre solo cuenta con 30 días")
+        formulario.fecha.focus();
+        return false;
+    }
+    //Validar Tel
+    var telefono= formulario.tel.value;
+    var letras=/\D/;
+    if(letras.test(telefono)){
+        alert("Ingresa números, no se admiten letras en el campo celular");
+        formulario.tel.focus();
+        return false;
+    }
+    var email = formulario.correo.value;
+    //Validar correo
+    //Vamos a crear una expresión regular
+        var prueba = /^[^@\s]+@[^@\.\s]+(\.[^@\.\s]+)+$/;
+        alert("E-mail "+(prueba.test(email) ? " " : "no ") + "válido")
 }
+        /*var telefono= formulario.tel.value;
+        var expresion="^[0-9]\{7}+$";
+        alert("Celular "+(expresion.test(telefono)?" ": "no ")+ "válido")
+        return prueba.test, expresion.test;*/

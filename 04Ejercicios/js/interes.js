@@ -14,7 +14,7 @@ function interes()
     if(( resul>0)&&(resul< 1000000000000000000000)) {
         var interes= resul* 0.02;
         var total = resul + interes;
-        document.getElementById("cantidadi").value= "$"+ total;
+        document.getElementById("cantidadi").value= "$"+ total; 
 }
 else{
     alert("Favor de ingresar una cantidad válida");
