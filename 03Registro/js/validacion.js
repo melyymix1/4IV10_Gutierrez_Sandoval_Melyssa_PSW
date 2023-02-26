@@ -46,7 +46,7 @@ function validar(formulario){
     }
     if(!todoesvalido)
     {
-        alert("Ingresa solo letras en el campo nombre");
+        alert("Ingresa solo letras en el campo nombre, sin espacios");
         formulario.nombre.focus();
         return false;
     }
