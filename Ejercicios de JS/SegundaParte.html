@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas Secuenciales 4-6</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/validar2.js"></script>
+</head>
+<body>
+    <div class="header">
+        <header>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Volver</a></li>
+              <li><a href="./primeraParte.html">Problemas Secuenciales 1-3</a></li>
+              <li><a href="./SegundaParte.html">Problemas Secuenciales 4-6</a></li>
+            </ul>
+          </nav>
+        </header></div>
+    <div class="contenedor2">
+    <div class="p4">
+        <form method="get" name="formulario4" action="">
+        <h2>Problema 4:</h2>
+        <label>Un alumno desea saber cual será su calificación final en la materia de Algoritmos
+            Dicha calificación se compone:
+            <ul>
+            <li>55% del promedio de sus tres calificaciones parciales.</li>
+            <li>30% de la Calificación del examen final.</li>
+           <li>15% de la Calificación de un trabajo final.</li>
+        </ul>
+        </label><div class="table-container4">
+        <table id="table4" class="tabla44">
+            <tr>
+                <td align="right">Calificación del Primer Parcial: </td>
+                <td><input type="number" step="0.01" name="cantidad"id="1Parcial" onkeypress="return validarn(event)" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td align="right">Calificación del Segundo Parcial: </td>
+                <td><input type="number" step="0.01" id="2Parcial" onkeypress="return validarn(event)" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td align="right">Calificación del Tercer Parcial: </td>
+                <td><input type="number" step="0.01" id="3Parcial" onkeypress="return validarn(event)" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td align="right">Calificación del Examen Final: </td>
+                <td><input type="number" step="0.01" id="Efinal" onkeypress="return validarn(event)" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td align="right">Calificación del Trabajo Final: </td>
+                <td><input type="number" step="0.01" id="Tfinal" onkeypress="return validarn(event)" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" name="ingresar" onclick="return validar4()" value="Enviar">
+            <input type="button" name="borr" value="Borrar" onclick="return borrar4()"></td>
+            </tr>
+            <tr><td align="right">Calificación Final en la materia:</td>
+                <td> <input type="text" id="Calificacion" readonly="readonly" class="input_text"> </td>
+
+            </tr>
+        </table></div>
+    </form>
+    </div>
+    <hr>
+    <div class="p5">
+        <form method="get" name="formulario5" action="">
+        <h2>Problema 5:</h2>
+        <label>Un maestro desea saber el porcentaje de hombres y porcentaje de mujeres de un grupo de estudiantes, 
+            dicho grupo solamente puede tener elementos de hombres con un porcentaje, elementos de mujeres con un 
+            porcentaje a partir de ahí obtener el 100%. </label>
+            <div class="table-container5">
+                <table id="table5" class="tabla55">
+                    <tr>
+                        <td align="right">Ingresa el total de hombres: </td>
+                        <td><input type="number" id="hombres" onkeypress="return validarn(event)" min="0" value="0"></td>
+                        <td><input type="text" id="porcentajeH" readonly="readonly"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Ingresa el total de mujeres: </td>
+                        <td><input type="number" id="mujeres" onkeypress="return validarn(event)" min="0" value="0"></td>
+                        <td><input type="text" id="porcentajeM" readonly="readonly"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Total: </td>
+                        <td><input type="text" id="total" readonly="readonly"></td>
+                        <td><input type="text" id="porcentajeF" readonly="readonly"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="center"><input type="button" name="INGRESAR" onclick="return validar5()" value="Calcular"></td>
+                        <td align="center"><input type="button" name="borrarr" onclick="return borrar5()" value="Borrar"></td>
+                    </tr>
+        </table></div>
+        </form>
+    </div>
+    <hr>
+    <div class="p6">
+        <form method="get" name="formulario6" action="">
+        <h2>Problema 6:</h2>
+        <label>Realizar un algoritmo que calcule la edad de una persona</label>
+        <div class="table-container6">
+        <table id="table6" class="tabla66">
+            <tr>
+                <td align="right">Fecha de Nacimiento: </td>
+                <td><input type="date" name="fecha" id="miento" onkeypress="return validarn(event)" min="1923-01-01"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Calcular" onclick="return validar6()"><input type="button" value="Borrar" onclick="return borrar6()"></td>
+            </tr>
+            <tr><td align="right">La edad es de:</td>
+                <td><input type="text" readonly="readonly" id="Edad"></td>
+            </tr>
+        </table></div>
+    </div>
+    </div>
+</body>
+</html>

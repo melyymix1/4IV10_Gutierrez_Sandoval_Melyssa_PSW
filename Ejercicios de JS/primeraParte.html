@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemas Secuenciales</title>
+    <title>Problemas Secuenciales 1-3</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
@@ -13,8 +13,8 @@
           <nav>
             <ul>
               <li><a href="./index.html">Volver</a></li>
-              <li><a href="./primeraParte.html">Problemas Secuenciales</a></li>
-              <li><a href="#">Problemas Selectivos Compuestos</a></li>
+              <li><a href="./primeraParte.html">Problemas Secuenciales 1-3</a></li>
+              <li><a href="./SegundaParte.html">Problemas Secuenciales 4-6</a></li>
             </ul>
           </nav>
         </header></div>
@@ -27,7 +27,7 @@
             <table id="table" class="tablai">
                 <tr>
                     <td align="right">Introduce la cantidad que desea invertir: </td>
-                    <td><input type="text" id="cantidad" onkeypress="return validarn(event)"></td>
+                    <td><input type="number" id="cantidad" value="0.0" step="any" min="0" onkeypress="return validarn(event)"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -40,7 +40,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td align="right">Su sueldo total máximo  36 meses es de:</td>
+                    <td align="right">Su sueldo total máximo en 36 meses es de:</td>
                     <td>
                         <input type="text" name="sueldot" id="cantidadt" readonly="readonly" class="input_text">
                     </td>
@@ -68,39 +68,39 @@
             <table id="table2" class="tablaa">
                 <tr>
                     <td align="right">Teclea el sueldo base: </td>
-                    <td><input type="text" id="cantidadp2" onkeypress="return validarn(event)"></td>
+                    <td><input type="number" step="any" min="0" id="cantidadp2" onkeypress="return validarn(event)"></td>
                 </tr>
                 <tr>
                     <td></td>
                 <tr>
                     <td align="right">Primer venta:</td>
                     <td>
-                        <input type="text" name="ventas" id="venta1" onkeypress="return validarn(event)">
+                        <input type="number"  step="any" min="0" name="ventas" id="venta1" onkeypress="return validarn(event)">
                     </td>
                 </tr>
 
                     <tr>
                     <td align="right">Segunda venta:</td>
                     <td>
-                        <input type="text" name="ventass" id="venta2" onkeypress="return validarn(event)">
+                        <input type="number" step="any" min="0" name="ventass" id="venta2" onkeypress="return validarn(event)">
                     </td>
                 </tr>
                 <tr>
                     <td align="right">Tercer venta:</td>
                     <td>
-                        <input type="text" name="ventasss" id="venta3" onkeypress="return validarn(event)">
+                        <input type="number"  step="any" min="0" name="ventasss" id="venta3" onkeypress="return validarn(event)">
                     </td>
                 </tr>
                 <tr>
                     <td align="right">Cuarta venta:</td>
                     <td>
-                        <input type="text" name="ventassss" id="venta4" onkeypress="return validarn(event)">
+                        <input type="number" step="any" min="0" name="ventassss" id="venta4" onkeypress="return validarn(event)">
                     </td>
                 </tr>
                 <tr>
                     <td align="right">Quinta venta:</td>
                     <td>
-                        <input type="text" name="ventasssss" id="venta5" onkeypress="return validarn(event)">
+                        <input type="number" step="any" min="0" name="ventasssss" id="venta5" onkeypress="return validarn(event)">
                     </td>
                         
                     
@@ -159,7 +159,7 @@
                 
                 <tr>
                     <td align="right">Precio: </td>
-                    <td><input type="text" id="Precioss" onkeypress="return validarn(event)"></td>
+                    <td><input type="number" id="Precioss" onkeypress="return validarn(event)" value="0.0" step="any" min="0" pattern="[0-9,.]+" required></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -173,29 +173,6 @@
                
             </table></div>
         </form>
-    </div>
-    <hr>
-    <div class="p4">
-        <h2>Problema 4:</h2>
-        <label>Un alumno desea saber cual será su calificación final en la materia de Algoritmos
-            Dicha calificación se compone:
-            55% del promedio de sus tres calificaciones parciales.
-            30% de la calificación del examen final.
-            15% de la calificación de un trabajo final.
-        </label>
-    </div>
-    <hr>
-    <div class="p5">
-        <h2>Problema 5:</h2>
-        <label>Un maestro desea saber el porcentaje de hombres y mujeres en un grupo, dicho 
-            grupo sola puede tener elementos de hombres y mujeres con un porcentaje, a partir de ahí obtener el 100%.
-        </label>
-    </div>
-    <hr>
-    <div class="p6">
-        <h2>Problema 6:</h2>
-        <label>Realizar un algoritmo que calcule la edad de una persona
-        </label>
     </div>
 </div>
 </body>

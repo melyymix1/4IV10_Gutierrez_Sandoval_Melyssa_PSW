@@ -23,8 +23,9 @@ function interes()
         return false;
     }
     else{
-        var resul= parseInt(valor);
-    if(( resul>0)&&(resul<=1000000000000000000000000)) {
+      //var letras=/\D\.[0-9]/;
+        var resul= parseFloat(valor);
+    if(( resul>0)&&(resul<=1000000000000000)) {
         var interes= resul* 0.082;
         var total = resul + interes;
         document.getElementById("cantidadi").value= "$"+ total; 
@@ -66,8 +67,8 @@ function interes2()
         var resul3= parseInt(valor3);
         var resul4= parseInt(valor4);
         var resul5= parseInt(valor5);
-    if(( resul>0)&&(resul<=1000000000000000000000000)&&( resul1>0)&&(resul1<=1000000000000000000000000)&&( resul2>0)&&(resul2<=1000000000000000000000000)
-    &&( resul3>0)&&(resul3<=1000000000000000000000000)&&( resul4>0)&&(resul4<=1000000000000000000000000)&&( resul5>0)&&(resul5<=1000000000000000000000000)) 
+    if(( resul>0)&&(resul<=1000000000000000000)&&( resul1>0)&&(resul1<=1000000000000000000)&&( resul2>0)&&(resul2<=1000000000000000000)
+    &&( resul3>0)&&(resul3<=1000000000000000000)&&( resul4>0)&&(resul4<=1000000000000000000)&&( resul5>0)&&(resul5<=1000000000000000000)) 
     {
         var sumaV1=resul1 * 0.35;
         var sumaV2=resul2 * 0.35;
@@ -160,6 +161,4 @@ function validarp3()
         return false;
       }
     } 
-  }
-//-----------------------------------------------//
-//Cuarto Problema:
+}

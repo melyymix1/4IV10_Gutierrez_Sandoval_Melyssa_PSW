@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectivos Compuestos</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/validar3.js"></script>
+</head>
+<body>
+    <div class="header">
+        <header>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Volver</a></li>
+              <li><a href="./primeraParte.html">Problemas Secuenciales</a></li>
+            </ul>
+          </nav>
+    </header></div>
+<div class="contenedor3">
+    <div class="p7">
+        <form method="get" name="formulario7" action="">
+        <h2>Problema 7:</h2>
+        <label>Leer 2 numeros; si son iguales que los multiplique, si el primero es 
+        mayor que el segundo que haga una potencia si el segundo es mayor que el primero que los divida</label>
+        <div class="table-container7">
+            <table id="table7" class="tabla77">
+                <tr>
+                    <td align="right">Primer número: </td>
+                    <td><input type="number" id="Numero1" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td align="right">Segundo número: </td>
+                    <td><input type="number" id="Numero2" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="ingresar" onclick="return validar7()" value="Calcular">
+                <input type="button" name="borr" value="Borrar" onclick="return borrar7()"></td>
+                </tr>
+                <tr><td align="right">Resultado de la operación:</td>
+                    <td> <input type="text" id="operacion" readonly="readonly" class="input_text"> </td>
+    
+                </tr>
+            </table></div>
+        </form>
+</div>
+<hr>
+<div class="p8">
+    <form method="get" name="formulario8" action="">
+    <h2>Problema 8:</h2>
+    <label>Leer tres numeros diferentes e imprimir el numero mayor de los tres. </label>
+        <div class="table-container8">
+            <table id="table8" class="tabla88">
+                <tr>
+                    <td align="right">Primer número: </td>
+                    <td><input type="number" id="1Numero" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td align="right">Segundo número: </td>
+                    <td><input type="number" id="2Numero" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td align="right">Tercer número: </td>
+                    <td><input type="number" id="3Numero" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="ingresar" onclick="return validar8()" value="Comparar">
+                <input type="button" name="borr" value="Borrar" onclick="return borrar8()"></td>
+                </tr>
+                <tr><td align="right">El mas grande es:</td>
+                    <td> <input type="text" id="resultado" readonly="readonly" class="input_text"> </td>
+    
+                </tr>
+    </table></div>
+    </form>
+</div>
+<hr>
+</div>
+</body>
+</html>
