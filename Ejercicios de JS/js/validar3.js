@@ -96,3 +96,102 @@ if((resul1>=0)&&(resul1<=1000)&&(resul2>=0)&&(resul2<=1000)&&(resul3>=0)&&(resul
 else{
     alert("Llena todos los campos, checa que no haya un número mayor a 1000");}}
 }
+function borrar9()
+{
+    document.getElementById("Dinero").value="";
+    document.getElementById("Horas").value="";
+    document.getElementById("total").value="";
+}
+function validar9()
+{
+    
+    var letras=/\D\./;
+    var primernumero= document.getElementById("Dinero").value;
+    var segundonumero= document.getElementById("Horas").value;
+
+if(letras.test(primernumero)|| letras.test(segundonumero)){
+        alert("Ingresa números, no se admiten letras");
+        return false;
+      }else{
+          var dinero= parseFloat(primernumero);
+          var horas= parseFloat(segundonumero);
+if((dinero>=0)&&(dinero<=168)&&(horas>=0)&&(horas<=168))
+{
+   if(horas==40||horas<40)
+   {
+    var resul= horas*dinero;
+    alert("Al no haber horas extra, se pagan normal");
+    document.getElementById("total").value="$"+ resul;
+   }
+   if((horas>40)&&(horas<=48))
+   {
+    resta=horas-40;
+    multi=resta*(2*dinero);
+    resul=40*dinero + multi;
+    alert("Al estar en el rango de 40-48 se pagan las horas extra al doble");
+    document.getElementById("total").value="$"+ resul;
+   }
+   if(horas>=49)
+   {
+    resta=horas-48;
+    multi=8*(2*dinero);
+    multi2=resta*(3*dinero);
+    resul=(multi)+(40*dinero)+multi2;
+    alert("Al ser mas de 48 horas trabajadas se pagan 8 horas al doble y el resto al triple");
+    document.getElementById("total").value="$"+ resul;
+   }
+}
+else{
+    alert("Llena todos los campos, checa que no haya un número mayor a 168 en el campo horas");}}
+}
+function borrar10()
+{
+    document.getElementById("Salario").value="";
+    document.getElementById("anos").value="";
+    document.getElementById("resultado1").value="";
+}
+function validar10()
+{
+    
+    var letras=/\D\./;
+    var primernumero= document.getElementById("Salario").value;
+    var segundonumero= document.getElementById("anos").value;
+
+if(letras.test(primernumero)|| letras.test(segundonumero)){
+        alert("Ingresa números, no se admiten letras");
+        return false;
+      }else{
+          var salario= parseFloat(primernumero);
+          var anos= parseFloat(segundonumero);
+if((salario>=0)&&(salario<=100000000000000000)&&(anos>=0)&&(anos<=100))
+{
+   if(anos<1)
+   {
+    var resul=salario*0.05;
+    document.getElementById("resultado1").value="$"+ resul;
+   }
+   if((anos>=1)&&(anos<2))
+   {
+    resul=salario*0.07;
+    document.getElementById("resultado1").value="$"+ resul;
+   }
+   if((anos>=2)&&(anos<5))
+   {
+    resul=salario*0.10;
+    document.getElementById("resultado1").value="$"+ resul;
+   }
+   if((anos>=5)&&(anos<10))
+   {
+    resul=salario*0.15;
+    document.getElementById("resultado1").value="$"+ resul;
+   }
+   if(anos>=10)
+   {
+    resul=salario*0.20;
+    document.getElementById("resultado1").value="$"+ resul;
+   }
+ 
+}
+else{
+    alert("Llena todos los campos, checa que no haya un número mayor a 100 en el años");}}
+}
