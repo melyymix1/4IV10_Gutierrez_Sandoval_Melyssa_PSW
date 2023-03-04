@@ -1,5 +1,5 @@
 function problema1(){
-    var valores = document.querySelector('#p1-input').value;
+    var valores = document.getElementById("p1-input").value;
     var split = valores.split(' ').reverse();
     var resultado = '';
 
