@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Ejercicios de Algoritmia</title>
 </head>
+<div class="header">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Index</a></li>
+        </ul>
+      </nav>
+    </header></div>
 <body>
     <div class="container">
         <!--Problema 1-->
@@ -17,9 +25,10 @@
                 espacio.
             </h3>
             <div class="problema-content">
-                <input type="text" class="problema-input" placeholder="Ingresa las palabras separadas por un espacio:" id="p1-input">
-                <button type="button" class="problema-button" onclick="" 
+                <input type="text" class="problema-input" id="prueba1" placeholder="Ingresa las palabras separadas por un espacio:" id="p1-input">
+                <button type="button" class="problema-button" onclick="return problema1()" 
                 style="margin-top: 1rem;">Invertir Palabras</button>
+                <button type="button" class="problema-button2" onclick="borrar1()">Borrar</button>
                 <pre class="problema-output" id="p1-output">Esperando datos...</pre>
             </div>
         </div>
@@ -95,8 +104,9 @@
                 </tbody>
                 </table>
             </div>
-                <button type="button" class="problema-button" onclick="" 
+                <button type="button" class="problema-button" onclick="return problema2()"
                 style="margin-top: 1rem;">Calcular Vector</button>
+                <button type="button" class="problema-button2" onclick="borrar2()">Borrar</button>
                 <pre class="problema-output" id="p2-output">Esperando datos...</pre>
             </div>
         </div>
@@ -108,13 +118,14 @@
                 <br>Ejemplo CASA= 3(c, a, s) PERRO= 4 (p, e, r, o)
                 <br>
                 Considerar solamente el alfabeto A-Z, en mayusculas, las palabras ingresadas deberan
-                estar separadass por una coma, no se acpetan espacios.
+                estar separadass por una coma, no se aceptan espacios.
             </h3>
             <div class="problema-content">
                 <input type="text" class="problema-input" placeholder="Ingresa las palabras separadas por una coma:" id="p3-input">
-                <button type="button" class="problema-button" onclick="" 
-                style="margin-top: 1rem;">Invertir Palabras</button>
-                <pre class="problema-output" id="p1-output">Esperando datos...</pre>
+                <button type="button" class="problema-button" onclick="return problema3()" 
+                style="margin-top: 1rem;">Contar Carácteres</button>
+                <button type="button" class="problema-button2" onclick="borrar3()">Borrar</button>
+                <pre class="problema-output" id="p3-output">Esperando datos...</pre>
             </div>
         </div>
 
