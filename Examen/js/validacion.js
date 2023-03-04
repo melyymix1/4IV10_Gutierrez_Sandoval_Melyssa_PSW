@@ -9,14 +9,15 @@ function calculoT() {
   var letras = /\D\./;
   var valor = document.querySelector("#cantidad").value;
   var anos = document.querySelector("#años").value;
-  if (letras.test(valor)) {
+  var tasa = document.querySelector("#tasa").value;
+  if (letras.test(valor)&& letras.test(tasa)) {
     alert("Ingresa números, no se admiten letras");
     return false;
   } else {
     valor = parseInt(valor);
     anos = parseInt(anos);
-    var tasa = 0.3; //ANUAl
-    var tasaM = tasa / 12;
+    tasa = parseInt(tasa);
+   
     var mesest = anos * 12;
     var calculo = valor / mesest;
     var contador = valor;
@@ -34,7 +35,9 @@ function calculoT() {
     var saldo='';
     var cuotas;
 
-    if (valor > 5000 && valor <= 3000000) {
+    if ((valor > 5000 && valor <= 3000000)&&(tasa>0 && tasa<=100)) {
+      tasa = tasa/100; 
+      var tasaM = tasa / 12;
       for (var i = 0; i < mesest; i++) {
         intereses = contador* tasaM;
         cuotas = intereses + calculo;
@@ -69,13 +72,14 @@ function calculoT() {
       document.querySelector("#totalCuota").textContent =
         "$" + totalC.toFixed(2);
     } else {
-      alert("Favor de ingresar una cantidad válida (5000-3000000)");
+      alert("Favor de ingresar una cantidad válida (5000-3000000 o de 1-100 en el caso del interés)");
       return false;
     }
   }
 }
 function borrar() {
   document.getElementById("cantidad").value = "";
+  document.getElementById("tasa").value = "";
   document.querySelector("#rPago").textContent = "";
   document.querySelector("#rcapital").textContent = "";
   document.querySelector("#rabono").textContent = "";
@@ -84,4 +88,6 @@ function borrar() {
   document.querySelector("#totalIntereses").textContent = "";
   document.querySelector("#totalAmortizacion").textContent = "";
   document.querySelector("#totalCuota").textContent = "";
+  document.querySelector("#rsaldo").textContent="";
+ 
 }

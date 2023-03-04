@@ -28,7 +28,7 @@
         >
         <br /><br />
         <label>Teclea el monto del prestamo:</label>
-        <br />
+        <br>
         <input
           type="number"
           id="cantidad"
@@ -36,9 +36,10 @@
           max="3000000"
           onkeypress="return validarn(event)"
         />
-        <br />
-        <label>Con una tasa de interés anual de 30% durante: </label>
-        <br />
+        <br>
+        <label>Con una tasa de interés anual del <input type="number" id="tasa" min="0" max="100"> % </label>
+        <br>
+        <label>En un periodo de:</label>
         <div class="seleccionar-años">
           <select id="años">
             <option value="1">1 año</option>
