@@ -41,6 +41,8 @@ valor del string de acuerdo a su valor Unicode. */
     {
         return v2-v1;
     });
+    
+    v2 = v2.reverse();
 
     var resultado = 0;
 
