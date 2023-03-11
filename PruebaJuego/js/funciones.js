@@ -480,7 +480,7 @@ window.onload = function() {
       tetromino.chooseNext();
       tetromino.chooseNext();
   
-      game.speed = 1000;
+      game.speed = 300;
       game.timer = setInterval(game.move, game.speed);
     };
   
