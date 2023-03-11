@@ -540,7 +540,7 @@ window.onload = function() {
       var newScore = oldScore + scoreToAdd;
       this.setScore(newScore);
       if (game.speed > 100 && (Math.floor(newScore / 1000) > Math.floor(oldScore / 1000))) {
-        game.speed -= 10;
+        game.speed -= 50;
         clearInterval(this.timer);
         game.timer = setInterval(game.move, game.speed);
       }
