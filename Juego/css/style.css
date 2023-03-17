@@ -1,0 +1,31 @@
+body { margin:10px; background-image: url("../images/fondo.jpg"); }
+
+body {
+    width: 600px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+#miCanvas {
+    border: groove 2px rgb(0, 72, 8);
+    background: rgb(255, 255, 255);
+}
+h1{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button {
+    margin-top: 20px;
+    appearance: none;
+    font-family: 'SF Pixelate', sans-serif;
+    border: none;
+    width: 300px;
+    padding: 10px;
+    background: #3984d9;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,1 @@
+const words = ['Teodiobatiz','Suicidio', 'CECyT','Otakus','Jimmy','Inteligentes','Diosteabandono','Depresion','Comida','Gatitos','Patitos','PythonZZZ'];

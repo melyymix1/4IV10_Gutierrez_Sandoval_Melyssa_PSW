@@ -1,8 +1,18 @@
 window.onload = function() {
+  instruccion();
     var node = document.getElementById("canvasTetris");
     canvasTetris(node);
   };
   
+  function instruccion()
+{
+    var resultado = window.confirm('Felicidades jugador 1 haz pasado al siguiente semestre, la temática es: Tetris, el juego no tiene límites así que puedes jugar todo lo que quieras.');
+    if (resultado === true){
+        window.alert('que la suerte este de tu lado, el juego empieza en 3,2,1..');
+    } else { 
+        window.alert('Si no entendiste, básicamente es tetris y con la flecha hacía arriba giras las flechas<3');
+    }
+}
   var canvasTetris = function(parentNode) {
     var canvas = {
       node: null,
@@ -32,6 +42,7 @@ window.onload = function() {
       this.context.strokeRect(283, 255, 102, 102);
       this.context.strokeStyle = "#f8f8ff";
     };
+    
   
     canvas.drawBlock = function(yNum, xNum) {
       var xCord = xNum * (this.blockSide + 2) + 5;
